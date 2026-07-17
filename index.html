@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Cobbs Café | Uddingston</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="hero">
+
+        <div class="overlay">
+
+            <h1>Cobbs Café</h1>
+
+            <p>Uddingston</p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="welcome">
+
+<h2>Welcome</h2>
+
+<p>
+Build your order before you come to the till.
+Simply choose your food, customise it and show your order to a member of staff.
+</p>
+
+</section>
+
+<section class="menu-grid">
+
+<button class="menu-card" onclick="showSection('breakfast')">
+
+🍳
+
+<h3>Breakfast</h3>
+
+<p>Rolls, pancakes and more</p>
+
+</button>
+
+<button class="menu-card" onclick="showSection('lunch')">
+
+🥪
+
+<h3>Lunch</h3>
+
+<p>Toasties, wraps, paninis</p>
+
+</button>
+
+<button class="menu-card" onclick="showSection('kids')">
+
+🧒
+
+<h3>Kids Menu</h3>
+
+<p>Smaller meals</p>
+
+</button>
+
+<button class="menu-card" onclick="showSection('drinks')">
+
+☕
+
+<h3>Drinks</h3>
+
+<p>Hot & Cold Drinks</p>
+
+</button>
+
+</section>
+
+<section id="content">
+
+<!-- JavaScript loads pages here -->
+
+</section>
+
+<section id="orderBox">
+
+<h2>Your Order</h2>
+
+<div id="orderItems">
+
+<p>No items selected.</p>
+
+</div>
+
+<button id="clearOrder">
+
+Clear Order
+
+</button>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© Cobbs Café Uddingston
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
