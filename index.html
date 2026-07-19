@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cobbs Café | Uddingston</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Cobbs Café | Uddingston</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+<header class="hero">
 
-    <div class="hero">
+<div class="hero-content">
 
-        <div class="overlay">
+<h1>Cobbs Café</h1>
 
-            <h1>Cobbs Café</h1>
+<p>Uddingston</p>
 
-            <p>Uddingston</p>
-
-        </div>
-
-    </div>
+</div>
 
 </header>
 
@@ -39,91 +38,80 @@
 <h2>Welcome</h2>
 
 <p>
-Build your order before you come to the till.
-Simply choose your food, customise it and show your order to a member of staff.
+
+Build your order before coming to the till.
+
+Simply tap the items you'd like and we'll create an order summary for you.
+
 </p>
 
 </section>
 
-<section class="menu-grid">
+<section class="cards">
 
-<button class="menu-card" onclick="showSection('breakfast')">
+<div class="card" onclick="openMenu('breakfast')">
 
-🍳
+<div class="icon">🍳</div>
 
 <h3>Breakfast</h3>
 
-<p>Rolls, pancakes and more</p>
-
-</button>
-
-<button class="menu-card" onclick="showSection('lunch')">
-
-🥪
-
-<h3>Lunch</h3>
-
-<p>Toasties, wraps, paninis</p>
-
-</button>
-
-<button class="menu-card" onclick="showSection('kids')">
-
-🧒
-
-<h3>Kids Menu</h3>
-
-<p>Smaller meals</p>
-
-</button>
-
-<button class="menu-card" onclick="showSection('drinks')">
-
-☕
-
-<h3>Drinks</h3>
-
-<p>Hot & Cold Drinks</p>
-
-</button>
-
-</section>
-
-<section id="content">
-
-<!-- JavaScript loads pages here -->
-
-</section>
-
-<section id="orderBox">
-
-<h2>Your Order</h2>
-
-<div id="orderItems">
-
-<p>No items selected.</p>
+<p>Rolls, toast & pancakes</p>
 
 </div>
 
-<button id="clearOrder">
+<div class="card" onclick="openMenu('lunch')">
 
-Clear Order
+<div class="icon">🥪</div>
 
-</button>
+<h3>Lunch</h3>
+
+<p>Toasties, wraps & paninis</p>
+
+</div>
+
+<div class="card" onclick="openMenu('drinks')">
+
+<div class="icon">☕</div>
+
+<h3>Drinks</h3>
+
+<p>Hot & cold drinks</p>
+
+</div>
+
+<div class="card" onclick="openMenu('kids')">
+
+<div class="icon">🧒</div>
+
+<h3>Kids</h3>
+
+<p>Smaller meals</p>
+
+</div>
+
+</section>
+
+<section id="pageContent">
+
+<h2>Select a menu above.</h2>
 
 </section>
 
 </main>
 
-<footer>
+<div id="orderSummary">
 
-<p>
+<h2>Your Order</h2>
 
-© Cobbs Café Uddingston
+<div id="orderList">
 
-</p>
+Nothing selected.
 
-</footer>
+</div>
+
+</div>
+
+<script src="menu.js"></script>
 
 <script src="script.js"></script>
 
